@@ -8,8 +8,8 @@ public class Main {
     public static int bossDamage = 60;
     public static String bossDefence = "";
     public static int evasionLucky;
-    public static int[] heroesHealth = {270, 280, 240, 300, 250,250,235, 280};
-    public static int[] heroesDamage = {15, 10, 20, 10, 10,15,5, 0};
+    public static int[] heroesHealth = {270, 280, 240, 300, 210,190,235, 280};
+    public static int[] heroesDamage = {15, 10, 20, 10, 10,10,5, 0};
     public static String[] heroesAttackType = {"Physical", "Magical", "Kinetic", "Golem", "Lucky","Berserk","Thor", "Medic"};
 
 
@@ -53,8 +53,8 @@ public class Main {
 
         for (int i = 0; i < heroesHealth.length; i++) {
             if (heroesHealth[6] > 0){
-                heroesHealth[6] -= bossDamage * 1 / 13;
-                heroesDamage[6] += heroesDamage[6] + bossDamage * 1 / 13;
+                heroesHealth[6] -= bossDamage * 1 / 14;
+                heroesDamage[6] += heroesDamage[6] + bossDamage * 1 / 14;
                 System.out.println("berserk blocking damage and up damage");
                 break;
             }
